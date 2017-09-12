@@ -1,0 +1,10 @@
+FROM node:8
+
+ADD package.json .
+
+RUN npm install
+
+ADD src/back-server/app.js .
+
+CMD node app.js
+
